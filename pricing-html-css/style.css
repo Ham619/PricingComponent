@@ -170,3 +170,118 @@ ul li.price {
     left: 0;
     z-index: -1;
 }
+
+@media (max-width: 280px) {
+    ul {
+      margin: 1rem;
+    }
+    h1 {
+      font-size: 1.2rem;
+    }
+    .toggle {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+    }
+    .cards {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .card {
+      transform: scale(0.8);
+      margin-bottom: 1rem;
+    }
+    .cards .card.active {
+      transform: scale(0.8);
+    }
+    .top-img{
+        position: absolute;
+        right: 0;
+    }
+    .bottom-img{
+      display: none;
+    }
+}
+  
+@media (min-width: 280px) and (max-width: 320px) {
+    ul {
+      margin: 20px;
+    }
+    .cards {
+      display: flex;
+      flex-direction: column;
+    }
+    .card {
+      margin-bottom: 2rem;
+    }
+    .cards .card.active {
+      transform: scale(1);
+    }
+    .top-img{
+        position: absolute;
+        right: 0;
+    }
+    .bottom-img{
+      display: none;
+    }
+}
+  
+@media (min-width: 320px) and (max-width: 414px) {
+    .cards {
+      display: flex;
+      flex-direction: column;
+    }
+    .card {
+      margin-bottom: 2rem;
+    }
+    .cards .card.active {
+      transform: scale(1);
+    }
+    .top-img{
+      position: absolute;
+      right: 0;
+    }
+    .bottom-img{
+      display: none;
+    }
+}
+@media (min-width: 414px) and (max-width: 768px) {
+    .card {
+      margin-bottom: 2rem;
+      margin-right: 1rem;
+    }
+    .cards .card.active {
+      transform: scale(1);
+    }
+    .top-img{
+        position: absolute;
+        right: 0;
+    }
+    .bottom-img{
+      display: none;
+    }
+}
+@media (min-width: 768px) and (max-width: 1046px) {
+    .cards {
+      display: flex;
+    }
+    .card {
+      margin-bottom: 2rem;
+      margin-right: 1rem;
+    }
+    .cards .card.active {
+      transform: scale(1);
+    }
+    .top-img{
+        position: absolute;
+        right: 0;
+      }
+    .bottom-img{
+      display: none;
+    }
+}
+  
