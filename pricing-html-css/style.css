@@ -158,4 +158,15 @@ ul li.price {
 .pack {
     font-size: 1.1rem;
 }
-  
+
+.top-img{
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+.bottom-img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
