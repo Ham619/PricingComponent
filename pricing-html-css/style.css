@@ -2,11 +2,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-  html {
+}
+html {
     font-size: 15px;
-  }
-  body {
+}
+body {
     background: #f7f7ff;
     font-family: "Montserrat", sans-serif;
     width: 80%;
@@ -16,36 +16,36 @@
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
-  }
-  
-  
-  header {
+}
+
+
+header {
     color: hsl(233, 13%, 49%);
     margin: 3.3rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  .toggle {
+}
+.toggle {
     margin-top: 2rem;
     color: hsl(234, 14%, 74%);
     display: flex;
     align-items: center;
-  }
-  .toggle-btn {
+}
+.toggle-btn {
     margin: 0 1rem;
-  }
-  .checkbox {
+}
+.checkbox {
     display: none;
-  }
-  
-  /* hsl(236, 72%, 79%) to hsl(237, 63%, 64%) */
-  
-  .sub {
-    background: linear-gradient( 
-      /* 140deg */
-        hsl(236, 72%, 79%) 0%, hsl(237, 63%, 64%)100% );
+}
+
+/* hsl(236, 72%, 79%) to hsl(237, 63%, 64%) */
+
+.sub {
+background: linear-gradient( 
+    /* 140deg */
+    hsl(236, 72%, 79%) 0%, hsl(237, 63%, 64%)100% );
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -55,13 +55,93 @@
     width: 3.3rem;
     border-radius: 1.6rem;
     padding: 0.3rem;
-  }
-  .circle {
+    }
+.circle {
     background-color: #fff;
     height: 1.4rem;
     width: 1.4rem;
     border-radius: 50%;
-  }
-  .checkbox:checked + .sub {
+}
+.checkbox:checked + .sub {
     justify-content: flex-end;
-  }
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    color: hsl(233, 13%, 49%);
+    border-radius: 0.8rem;
+}
+
+.cards .card.active {
+    background: linear-gradient( 
+    140deg
+    , #A0A3F0 0%, #6D71DF 100% );
+    color: #fff;
+    display: flex;
+    align-items: center;
+    transform: scale(1.1);
+    z-index: 1;
+}
+ul {
+    margin: 2.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+ul li {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem 0;
+}
+ul li.price {
+    font-size: 3rem;
+    color: hsl(232, 13%, 33%);
+    padding-bottom: 2rem;
+}
+.shadow {
+    box-shadow: -5px 5px 15px 1px rgba(0, 0, 0, 0.1);
+}
+  
+.card.active .price {
+    color: #fff;
+}
+  
+.btn {
+    margin-top: 1rem;
+    height: 2.6rem;
+    width: 13.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    cursor: pointer;
+    border-radius: 4px;
+    background: linear-gradient( 
+      140deg
+      , #A0A3F0 0%, #6D71DF 100% );
+    color: #fff;
+    outline: none;
+    border: 0;
+    font-weight: bold;
+  
+}
+  
+.btn:hover{
+  
+    background: linear-gradient( 
+      140deg
+       ,#6D71DF 0%, #A0A3F0  100% );
+  
+    color: #f7f7ff;
+}
+  
