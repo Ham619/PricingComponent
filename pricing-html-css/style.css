@@ -145,3 +145,17 @@ ul li.price {
     color: #f7f7ff;
 }
   
+.active-btn {
+    background: #fff;
+    color: hsl(237, 63%, 64%);
+}
+.bottom-bar {
+    border-bottom: 2px solid hsla(240, 8%, 85%, 0.582);
+}
+.card.active .bottom-bar {
+    border-bottom: 2px solid hsla(240, 8%, 85%, 0.253);
+}
+.pack {
+    font-size: 1.1rem;
+}
+  
